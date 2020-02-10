@@ -15,17 +15,13 @@ a:visited {color: inherit;}
 
 /* Header */
 header {
-	height: 80vh;
+	height: 600px;
+	position: relative;
 	background-image: linear-gradient(to right, rgba(69, 0, 94, .8), rgba(127, 1, 62, .6)), url(img/back.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: top center;
-	background-size: 100%;
-}
-header img {
-	width: 100%;
-	height: 100%;
-	border-bottom: 2px solid white; 
+	background-size: 110%;
 }
 /* Меню навигации */
 .menu {	
@@ -42,13 +38,22 @@ header img {
 	display: inline-block;
 	padding: 15px 5%;
 	text-align: center;
-
-
 }
 .menu li:hover {
 	background: white; 
 	color: black;
 }
+/* Hello */
+.hello {
+	padding-top: 12%;
+	font-size: 80px;
+	font-family: 'Sriracha', cursive;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	color: white;
+}
+
 /* Main */
 main {
 	background: ;
@@ -57,7 +62,7 @@ main {
 /* Intro */
 .intro {
 	width: auto;
-	height: 50vh;
+	height: 400px;
 	background-color: #2e2e2e;
 	border-top: 3px solid white;
 	border-bottom: 3px solid white;
@@ -66,31 +71,47 @@ main {
 }
 .intro h2 {
 	font-weight: 700;
-	font-size: 44px;
+	font-size: 46px;
 	text-align: center; 
+	height: 100px;
+	padding: 5px;
+}
+.intro h2:hover {
+	font-size: 40px;
 }
 .intro h2:after {
 	content: "";
 	display: block;
 	height: 3px;
-	width: 30vh;
+	width: 300px;
 	background-color: white;
 	margin: 10px auto 0;
 }
-.intro h2:hover {
-	font-size: 50px;
-}
 .intro h2:hover:after {
-	width: 40vh;
-	margin: 15px auto 0;
+	width: 200px;
 }
 .intro h2::after {
-	transition: .3s;
+	transition: .5s;
 }
-/* Сектции контента */
+.intro h2:before {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 200px;
+	background-color: white;
+	margin: 0 auto 10px;
+}
+.intro h2:hover:before {
+	width: 300px;
+}
+.intro h2::before {
+	transition: .5s;
+}
+
+/* Секции контента */
 .block {
 	width: auto;
-	height: 300px;
+	height: 200px;
 	padding: 50px;
 }
 .odd {
@@ -118,7 +139,7 @@ footer {
 	width: auto;
 	background-color: #2e2e2e;
 	border-top: 3px solid white;
-	padding: 70px;
+	padding: 75px;
 }
 .footer_content {
 	color: white;	
