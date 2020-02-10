@@ -1,0 +1,126 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	transition: .3s;	
+}
+body {
+	font-family: 'Source Code Pro', monospace;
+	background: #666;
+	height: auto;
+}
+a {text-decoration: none;}
+a:hover {color: inherit;}
+a:link {color: inherit;}
+a:visited {color: inherit;}
+
+/* Header */
+header {
+	height: 80vh;
+	background-image: linear-gradient(to right, rgba(69, 0, 94, .8), rgba(127, 1, 62, .6)), url(img/back.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top center;
+	background-size: 100%;
+}
+header img {
+	width: 100%;
+	height: 100%;
+	border-bottom: 2px solid white; 
+}
+/* Меню навигации */
+.menu {	
+	height: auto;
+	width: 100%;
+	position: fixed;
+	border-bottom: 2px solid white;
+	color: white;
+	background-color: #2e2e2e;
+	vertical-align: middle;
+}
+.menu li {
+	font-size: 120%;
+	display: inline-block;
+	padding: 15px 5%;
+	text-align: center;
+
+
+}
+.menu li:hover {
+	background: white; 
+	color: black;
+}
+/* Main */
+main {
+	background: ;
+	height: auto;
+}
+/* Intro */
+.intro {
+	width: auto;
+	height: 50vh;
+	background-color: #2e2e2e;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	color: white;
+	padding: 50px;
+}
+.intro h2 {
+	font-weight: 700;
+	font-size: 44px;
+	text-align: center; 
+}
+.intro h2:after {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 30vh;
+	background-color: white;
+	margin: 10px auto 0;
+}
+.intro h2:hover {
+	font-size: 50px;
+}
+.intro h2:hover:after {
+	width: 40vh;
+	margin: 15px auto 0;
+}
+.intro h2::after {
+	transition: .3s;
+}
+/* Сектции контента */
+.block {
+	width: auto;
+	height: 300px;
+	padding: 50px;
+}
+.odd {
+	color: black;
+	background-color: white;
+}
+.even {
+	color: white;
+	background-color: #2e2e2e;	
+}
+.cont {
+	padding: 20px;
+}
+.odd .cont {
+	border: 2px solid #2e2e2e;
+}
+.even .cont {
+	border: 2px solid white;
+}
+
+/* Footer */
+footer {
+	bottom: 0px;
+	height: 250px;
+	width: auto;
+	background-color: #2e2e2e;
+	border-top: 3px solid white;
+	padding: 70px;
+}
+.footer_content {
+	color: white;	
+	padding: 30px;
+}
